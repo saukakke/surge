@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function q(){
+            let table = document.createElement("table");
+            let tbody = document.createElement("tbody");
+            for(i=1; i<=8; i++){
+                let tr = document.createElement("tr");
+                for(j=1; j<=8; j++){
+                    let td = document.createElement("td");
+                    tr.appendChild(td);
+                }
+                tbody.appendChild(tr);
+            }
+            table.appendChild(tbody);
+            table.setAttribute("border", 2);
+            document.body.appendChild(table);
+        }
+        q();
+    </script>
+</body>
+</html>
