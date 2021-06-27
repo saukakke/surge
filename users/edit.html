@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>User Registeration - Surge Ryder's</title>
+    <title>User Edit Profile - Surge Ryder's</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/font-awesome.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -24,10 +24,11 @@
                 
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="../admin/index.html">Admin Login</a></li>
-                        <li><a href="../driver/index.html">Driver Login</a></li>
-                        <li><a href="index.html">Sign in</a></li>
-                        <li class="active"><a href="reg.html">Sign Up</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li class="active"><a href="edit.html">Edit Profile</a></li>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="bookaride.html">Book ride</a></li>
+                        <li><a href="index.html">Logout</a></li>
                     </ul>
                 </div>
             </nav>
@@ -35,12 +36,12 @@
             <form action="" method="post" enctype="multipart/form-data">
                 <div class="row">
                     <div id="header">
-                        <label id="label">User's Registeration</label>
+                        <label id="label">User Edit Profile</label>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-12 col-md-2" id="myLabel">
+                    <div class="col-sm-12 col-md-2">
                         <label for="fname">First Name</label>
                     </div>
 
@@ -50,7 +51,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-12 col-md-2" id="myLabel">
+                    <div class="col-sm-12 col-md-2">
                         <label for="fname">Last Name</label>
                     </div>
                         
@@ -75,13 +76,13 @@
                     </div>
 
                     <div class="col-sm-12 col-md-10">
-                        <input type="text" class="form-control" name="phone" placeholder="Phone Number" maxlength="11">
+                        <input type="phone" class="form-control" name="phone" placeholder="Phone Number" maxlength="11">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-sm-12 col-md-2">
-                        <label for="fname">Username</label>
+                        <label for="username">Username</label>
                     </div>
                     
                     <div class="col-sm-12 col-md-10">
@@ -111,43 +112,12 @@
 
                 <div class="row">
                     <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
-                        <input type="submit" value="Register" id="myButton" class="form-control">
+                        <input type="submit" value="Update Profile" id="myButton" class="form-control">
                     </div>
                 </div>
             </form>
 
             <div class="row" id="footer">
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <label id="footer-header">Quick Links</label>
-                    <ul>
-                        <a href="#"><li>>>> Admin Login</li></a>
-                        <a href="#"><li>>>> Driver Login</li></a>
-                        <a href="#"><li>>>> User Login</li></a>
-                        <a href="#"><li>>>> saukakke@gmail.com</li></a>
-                    </ul>
-                </div>
-    
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <label id="footer-header">Email Us</label>
-                    <ul>
-                        <a href="#"><li>>>> saukakke@gmail.com</li></a>
-                        <a href="#"><li>>>> saukakke@gmail.com</li></a>
-                        <a href="#"><li>>>> saukakke@gmail.com</li></a>
-                        <a href="#"><li>>>> saukakke@gmail.com</li></a>
-                    </ul>
-                </div>
-    
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <label id="footer-header">Call Us</label>
-                    <ul>
-                        <a href="#"><li>>>> (+234) 0813 014 4920</li></a>
-                        <a href="#"><li>>>> (+234) 0813 014 4920</li></a>
-                        <a href="#"><li>>>> (+234) 0813 014 4920</li></a>
-                        <a href="#"><li>>>> (+234) 0813 014 4920</li></a>
-                    </ul>
-                </div>
-    
-    
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <label id="footer-title">&copy 2021 Surge Ryder's<sup>&reg</sup></label>
                 </div>

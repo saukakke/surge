@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Driver Registeration - Surge Ryder's</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+        <div class="container bg-success">
+
+            <nav class="navbar navbar-inverse" id="nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" id="brand" href="#">Surge Ryder's</a>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="index.html">Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div id="header">
+                        <label id="label">Driver's Dashboard</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div id="subheader">
+                        <label id="label">Driver's Profile</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-2">
+                        <label for="fname">First Name</label>
+                    </div>
+
+                    <div class="col-sm-12 col-md-10">
+                        <input type="text" class="form-control" name="fname" placeholder="First Name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-2">
+                        <label for="fname">Last Name</label>
+                    </div>
+
+                    <div class="col-sm-12 col-md-10">
+                        <input type="text" class="form-control" name="lname" placeholder="Last Name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-2">
+                        <label for="phone">Phone Number</label>
+                    </div>
+
+                    <div class="col-sm-12 col-md-10">
+                        <input type="phone" class="form-control" name="phone" placeholder="Phone Number">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-2">
+                        <label for="email">Email Address</label>
+                    </div>
+
+                    <div class="col-sm-12 col-md-10">
+                        <input type="email" class="form-control" name="email" placeholder="Email Address">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div id="subheader">
+                        <label id="label">Driver's Ride Record</label>
+                    </div>
+                </div>
+
+                <table class="table-responsible" style="width: 100%;">
+                    <tr>
+                        <th>S/N</th>
+                        <th>Client Name</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                        
+                    <tr>
+                        <td id="sn">1</td>
+                        <td>Yasin Muhammed Tukur</td>
+                        <td><i>Pending</i></td>
+                        <td><input type="button" value="Accept" id="accept">
+                            <input type="button" value="Decline" id="decline"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="sn">2</td>
+                        <td>Aminu Sani Balarabe</td>
+                        <td><i>Accepted</i></td>
+                        <td><input type="button" value="Accept" id="accept">
+                            <input type="button" value="Decline" id="decline"></td>
+                    </tr>
+                </table>
+
+                <div class="row" id="footer">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <label id="footer-title">&copy 2021 Surge Ryder's</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+</body>
+</html>

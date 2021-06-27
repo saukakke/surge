@@ -6,15 +6,60 @@ button > a:hover {
     text-decoration: none;
 }
 
-button > a {
-    color: grey;
+#myButton:hover, #btnButton:hover, a:hover > button {
+    color: orange;
+    text-decoration: none;
 }
 
-button{
+#counter{
+    width: auto;
+    height: auto;
+    border-radius: 3px;
+    color: white;
+    background-color: red;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+input[type=button], button{
     color: gray;
     background-color: black;
     border: 0px;
     border-radius: 5px;
+}
+
+#header{
+    background-color: black;
+    margin-right: 13px;
+    margin-left: 13px;
+    text-align: center;
+}
+
+#footer{
+    background-color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#footer-title{
+    color: orange;
+}
+
+#label{
+    color: orange;
+    border: 0px;
+    padding: 10px;
+    font-size: medium;
+}
+
+#table-id{
+    border: 0px;
+    padding: 10px;
+    font-size: medium;
+    margin-right: 13px;
+    margin-left: 13px;
 }
 
 input[type=submit] {
@@ -24,3 +69,160 @@ input[type=submit] {
     border-radius: 5px;
 }
 
+#myButton{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#note{
+    display: inline-flex;
+}
+
+#account{
+    padding-right: 5px;
+    margin-top: 5px;
+}
+
+#btnButton{
+    padding: 8px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#brand{
+    margin: auto;
+}
+
+#brand:hover {
+    color: orange;
+}
+
+table{
+    background-color: white;
+    color: black;
+    margin-bottom: 15px;
+}
+
+tr{
+    border-bottom: 2px solid orange;
+}
+
+tr:last-child{
+    border-bottom: 0px;
+}
+
+th{
+    background-color: orange;
+    color: black;
+    padding: 10px;
+    border-right: 5px solid red;
+}
+
+td{
+    border-right: 5px solid red;
+}
+
+td:last-child{
+    border-right: 0px;
+}
+
+#decline{
+    background-color: rgb(190, 30, 30);
+    color: rgb(34, 28, 28);
+}
+
+#accept{
+    background-color: rgb(30, 190, 30);
+    color: rgb(34, 28, 28);
+}
+
+#accept:hover, #decline:hover {
+    color: white;
+}
+
+th:last-child{
+    border-right: 0px;
+}
+
+td{
+    padding: 10px;
+}
+
+.container{
+    padding-top: 10px;
+}
+
+#map{
+    width: 100%;
+    height: 1000px;
+}
+
+#image{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin-top: 2.2%;
+}
+
+#image-o{
+    width: 156px;
+    height: 156px;
+    border-radius: 78px;
+    border-color: black;
+    border-width: 5px;
+    background-color: black;
+}
+
+#avatar{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+#table-tr{
+    display: space-between;
+}
+
+#view{
+    float: left;
+}
+
+#feedback{
+    background-color: rgb(173, 46, 46);
+    padding: 5px;
+    color: white;
+}
+
+#footer-header{
+    color: white;
+}
+
+#footer ul li:hover{
+    color: orange;
+}
+
+#footer ul li{
+    list-style-type: none;
+    padding: 3px;
+    text-decoration: none;
+    color: grey;
+}
+
+#footer ul li:visited{
+    color: orangered;
+}
+
+#textarea{
+    width: max-content;
+    resize: none;
+}
+
+#feedback:hover{
+    color: orange;
+}
+
+#btnLogin{
+    width: fit-content;
+}

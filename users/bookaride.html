@@ -5,46 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>User Book A Ride - Surge Ryder's</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container bg-success">
+
+        <nav class="navbar navbar-inverse" id="nav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="brand" href="#">Surge Ryder's</a>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="edit.html">Edit Profile</a></li>
+                    <li><a href="map.html">Map</a></li>
+                    <li class="active"><a href="bookaride.html">Book ride</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+
         <form action="" method="post">
             <div class="row">
-                <div class="col-sm-12 col-md-6">
+                <div id="header">
+                    <label id="label">User Book A Ride</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-2">
                     <label for="fullname">Full Name</label>
                 </div>
 
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-10">
                     <input type="text" class="form-control" name="fullname" placeholder="Full Name">
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-2">
                     <label for="phone">Phone Number</label>
                 </div>
 
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-10">
                     <input type="text" name="phone" class="form-control" maxlength="11" placeholder="Phone Number">
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-2">
                     <label for="email">Email Address</label>
                 </div>
 
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-10">
                     <input type="email" class="form-control" name="email" placeholder="Email Address">
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-2">
                     <label for="seat">Number of Seat</label>
                 </div>
 
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-10">
                     <select name="seat" class="form-control">
                         <option>--Select Seat(s)--</option>
                         <option value="1">1</option>
@@ -56,18 +86,26 @@
             </div>
 
             <div class="row">
-                <div class="col">
-                    <label for="">Choose method of Payment.</label>
+                <div class="col-sm-7 col-xs-7 col-md-7 col-lg-7">
+                    <div id="note">
+                        <label id="account">Choose methode of Payment</label>
+                        <div  style="float: right;">
+                            <input type="button" value="Online" id="myButton" class="form-control" >
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <input type="submit" name="online" value="Online Payment" class="form-control">
-                    <input type="submit" class="form-control" name="cash">
+                <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5">
+                    <input type="button" value="Cash" id="myButton" class="form-control">
                 </div>
             </div>
         </form>
+
+        <div class="row" id="footer">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <label id="footer-title">&copy 2021 Surge Ryder's<sup>&reg</sup></label>
+            </div>
+        </div>
     </div>
 </body>
 </html>
